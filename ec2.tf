@@ -1,3 +1,4 @@
+# Comment : Only for debug stuff.
 # resource "aws_iam_role" "ec2_role" {
 #   name = "ec2-role"
 

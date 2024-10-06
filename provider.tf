@@ -1,4 +1,5 @@
-# esncf-001-999-sf-public-0
+#becareful you need to fix the version of provider, don't do that in production lul.
+
 terraform {
   required_providers {
     aws = {
@@ -6,6 +7,7 @@ terraform {
     }
   }
 }
+
 
 provider "aws" {
   region = "eu-west-3"

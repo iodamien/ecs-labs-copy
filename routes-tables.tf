@@ -1,3 +1,5 @@
+# private routable it's going to used the nat gateway which it's connect to internet gateway.
+
 resource "aws_default_route_table" "main" {
   default_route_table_id = aws_vpc.main.default_route_table_id
 
@@ -54,6 +56,7 @@ resource "aws_route_table" "sub-prv" {
     Name = "private-route"
   }
 }
+# AZ B
 
 resource "aws_route_table_association" "sub-prv-a" {
   subnet_id      = aws_subnet.subnet-a-prv.id

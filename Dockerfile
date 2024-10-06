@@ -77,3 +77,6 @@ RUN set -x \
     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi \
 # Bring in curl and ca-certificates to make registering on DNS SD easier
     && apk add --no-cache curl ca-certificates
+    
+ # if you want to erase index.html just for one word.   
+RUN echo "v01" > /usr/share/nginx/html/index.html
